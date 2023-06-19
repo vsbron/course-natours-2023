@@ -6,7 +6,8 @@ Small website about nature tours. Created as a part of Advanced CSS & Sass proje
  - 
 
 ## Details
- - 
+ - CSS is written using BAM methodology;
+ - CSS variables are used;
 
 ## Live version
-https://vsbron-course-crwn-clothing-2023.netlify.app/
+https://vsbron-course-natours-2023.netlify.app/
