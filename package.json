@@ -1,0 +1,14 @@
+{
+  "name": "natours-2023-css",
+  "version": "1.0.0",
+  "description": "Small website about nature tours. Created as a part of Advanced CSS & Sass project in 2023",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  }
+}
