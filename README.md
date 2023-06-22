@@ -6,7 +6,7 @@ Small website about nature tours. Created as a part of Advanced CSS & Sass proje
  - 
 
 ## Details
- - CSS is written using BAM methodology;
+ - CSS is written using BEM methodology;
  - CSS variables are used;
 
 ## Live version
