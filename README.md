@@ -6,8 +6,10 @@ Small website about nature tours. Created as a part of Advanced CSS & Sass proje
  - 
 
 ## Details
- - CSS is written using BEM methodology;
- - CSS variables are used;
+ - Page is built using Float layout;
+ - Stylesheets are written using SCSS;
+ - All the styles are written using BEM methodology;
+ - Stylesheets files are sorted using 7-1 CSS architecture;
 
 ## Live version
 https://vsbron-course-natours-2023.netlify.app/
