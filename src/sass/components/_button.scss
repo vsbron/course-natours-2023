@@ -1,26 +1,26 @@
 %btns-placeholder {
-  position: relative;
   display: inline-block;
-  text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
-  border-radius: $border-radius-large;
-  transition: all .2s ease;
+  transition: all .2s $animation-timing;
 }
 
 .btn {
   &:link, &:visited {
-    @extend %btns-placeholder
+    @extend %btns-placeholder;
+    position: relative;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    border-radius: $border-radius-large;
   }
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem $shadow-color;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
   }
   
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem $shadow-color;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
 
   &:after {
@@ -33,7 +33,7 @@
     height: 100%;
     width: 100%;
     border-radius: $border-radius-large;
-    transition: all .2s ease-out;
+    transition: all .2s $animation-timing;
   }
   
   &:hover::after {
@@ -52,5 +52,26 @@
   
   &--animated {
     animation: moveInBottom .5s ease-out .75s backwards;
+  }
+}
+.btn-text {
+  &:link, &:visited {
+    @extend %btns-placeholder;
+    font-size: $default-font-size;
+    color: $color-primary;
+    padding: 3px;
+    border-bottom: 1px solid $color-primary;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
   }
 }
