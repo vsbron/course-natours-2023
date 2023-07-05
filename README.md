@@ -1,8 +1,12 @@
 # Natours Project [2023]
 
-Small website about nature tours. Created as a part of Advanced CSS & Sass project in 2023
+Small website about nature tours. Created as a part of Advanced CSS & Sass project in 2023.
 
 ## Features
+ - Full screen menu;
+ - Flipping cards with tour packages;
+ - Testimonials;
+ - Simple contact form;
  - 
 
 ## Details

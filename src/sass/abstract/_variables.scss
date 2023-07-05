@@ -16,7 +16,10 @@ $color-black: #000;
 
 $border-radius-small: 3px;
 $border-radius-large: 10rem;
+
 $animation-timing: ease-in-out;
+$animation-timing-quint: cubic-bezier(.86, 0, .07, 1);
+$animation-timing-out: cubic-bezier(.68, -.55, .265, 1.55);
 
 // Font sizes
 $default-font-size: 1.6rem;
