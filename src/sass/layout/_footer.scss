@@ -49,6 +49,14 @@
     border-top: $color-gray-light-2 1px solid;
     padding-top: 2rem;
     width: 80%;
-    float: right
+    float: right;
+
+    a:link, a:visited {
+      color: $color-primary;
+    }
+
+    a:hover, a:focus {
+      color: $color-white;
+    }
   }
 }

@@ -7,7 +7,6 @@ Small website about nature tours. Created as a part of Advanced CSS & Sass proje
  - Flipping cards with tour packages;
  - Testimonials;
  - Simple contact form;
- - 
 
 ## Details
  - Page is built using Float layout;
