@@ -7,13 +7,18 @@
     width: 7rem;
     border-radius: 50%;
     position: fixed;
-    top: 6rem;
+    top: 5.5rem;
     right: 6rem;
     text-align: center;
     background: $color-white;
     cursor: pointer;
     box-shadow: 0 1 rem 3rem rgba($color-black, .1);
     z-index: 2000;
+
+    @include respond(tab-port) {
+      top: 2.5rem;
+      right: 4rem;
+    }
   }
 
   &__background {
@@ -21,12 +26,17 @@
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
+    top: 6rem;
     right: 6.5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
     z-index: 1000;
     transform: scale(1);
     transition: transform .8s $animation-timing-quint;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 4.5rem;
+    }
   }
 
   &__nav {

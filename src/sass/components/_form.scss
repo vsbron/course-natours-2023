@@ -16,6 +16,10 @@
     border: none;
     border-bottom: transparent 3px solid;
     transition: all .3s $animation-timing;
+    
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
@@ -55,6 +59,11 @@
     &-group {
       width: 49%;
       display: inline-block;
+
+      @include respond(tab-port) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
     }
 
     &-input { display: none }

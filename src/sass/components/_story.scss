@@ -7,6 +7,16 @@
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
   transform: skew(-12deg);
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem 4rem 4rem 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skew(0);
+  }
+
+
   &:not(:last-child){
     margin-bottom: 5rem;
   }
@@ -21,6 +31,10 @@
     clip-path: circle(50% at 50% 50%);
     -webkit-slip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skew(12deg);
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skew(0);
+    }
   }
 
   &__img {
@@ -32,6 +46,10 @@
 
   &__text {
     transform: skew(12deg);
+
+    @include respond(phone) {
+      transform: skew(0);
+    }
   }
 
   &__caption {

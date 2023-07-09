@@ -29,4 +29,8 @@ body {
   font-family: "Lato", sans-serif;
   color: $color-gray-dark-1;
   padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }

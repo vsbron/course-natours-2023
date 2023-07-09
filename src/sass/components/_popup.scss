@@ -12,7 +12,7 @@
 
   &__content {
     @include center-horizontal-vertical;
-    width: 75%;
+    width: 115rem;
     background: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-white, .2);
     position: absolute;
@@ -22,11 +22,32 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.25);
     transition: all .4s $animation-timing-quint;
+
+    @include respond(tab-land) {
+      width: 95rem;
+    }
+
+    @include respond(tab-port) {
+      width: 70rem;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__left {
     width: 33.33333%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      width: 40%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__right {
@@ -34,12 +55,31 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 60%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+      display: block;
+    }
+
+    @include respond(phone) {
+      padding: 2rem 3rem 3rem;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
     height: auto;
+
+    @include respond(tab-port) {
+      width: 50%;
+      float: left;
+      margin-bottom: 2rem;
+    }
   }
 
   &__text {
@@ -49,6 +89,15 @@
     column-gap: 4rem;
     column-rule: $color-gray-light-2 1px solid;
     hyphens: auto;
+
+    @include respond(tab-land) {
+      margin-bottom: 3rem;
+      column-count: 1;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 2rem;
+    }
   }
 
   &:target {
@@ -76,6 +125,12 @@
 
       &:hover, &:focus {
         color: $color-primary;
+      }
+
+      @include respond(phone) {
+        top: 0rem;
+        right: 1rem;
+        font-size: 5rem;
       }
     }
   }
