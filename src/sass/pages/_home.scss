@@ -16,6 +16,7 @@
 
   @include respond(tab-land) { padding: 15rem $side-padding 12rem }
   @include respond(tab-port) { padding: 15rem $side-padding--small 10rem }
+  @include respond(phone) { padding: 12rem $side-padding--small 10rem }
 
   & > * { transform: skewY(7deg) }
 }
@@ -27,7 +28,7 @@
 
   @include respond(tab-land) { padding: 25rem $side-padding 10rem }
   @include respond(tab-port) { padding: 25rem $side-padding 15rem }
-  @include respond(phone) { padding: 25rem $side-padding--small 15rem }
+  @include respond(phone) { padding: 22rem $side-padding--small 12rem }
 }
 
 .section__stories {

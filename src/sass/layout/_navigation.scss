@@ -12,12 +12,17 @@
     text-align: center;
     background: $color-white;
     cursor: pointer;
-    box-shadow: 0 1 rem 3rem rgba($color-black, .1);
+    box-shadow: 0 1rem 3rem rgba($color-black, .1);
     z-index: 2000;
 
     @include respond(tab-port) {
       top: 2.5rem;
       right: 4rem;
+    }
+
+    @include respond(phone) {
+      height: 6rem;
+      width: 6rem;
     }
   }
 
@@ -36,6 +41,11 @@
     @include respond(tab-port) {
       top: 3rem;
       right: 4.5rem;
+    }
+
+    @include respond(phone) {
+      height: 5rem;
+      width: 5rem;
     }
   }
 
@@ -104,6 +114,10 @@
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+
+    @include respond(phone) {
+      margin-top: 3rem;
+    }
 
     &, &::before, &::after {
       display: inline-block;
