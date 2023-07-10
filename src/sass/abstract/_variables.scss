@@ -26,9 +26,13 @@ $default-font-size: 1.6rem;
 
 // Grid
 $grid-width: 114rem;
+$grid-width--medium: 60rem;
 $grid-width--small: 50rem;
 
-$gutter-vertical: 8rem;
-$gutter-vertical--small: 6rem;
+$gutter-vertical: 6rem;
+$gutter-vertical--small: 4rem;
 
-$gutter-horizontal: 6rem;
+$gutter-horizontal: 4rem;
+
+$side-padding: 5rem;
+$side-padding--small: 3rem;

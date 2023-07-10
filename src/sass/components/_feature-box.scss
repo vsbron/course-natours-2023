@@ -8,8 +8,12 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   transition: transform .3s $animation-timing;
 
+  @include respond(tab-land) {
+    margin: 0 auto;
+  }
+
   @include respond(tab-port) {
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
   }
 
   &__icon {

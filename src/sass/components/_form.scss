@@ -26,17 +26,11 @@
       box-shadow: 0 1rem 2rem rgba($color-black, .1);
     }
 
-    &:focus:invalid {
-      border-bottom: $color-secondary-dark 3px solid;
-    }
+    &:focus:invalid { border-bottom: $color-secondary-dark 3px solid }
 
-    &:focus:valid {
-      border-bottom: $color-primary 3px solid;
-    }
+    &:focus:valid { border-bottom: $color-primary 3px solid }
 
-    &::-webkit-input-placeholder{
-      color: $color-gray-dark-2;
-    }
+    &::-webkit-input-placeholder{ color: $color-gray-dark-2 }
   }
 
   &__label {

@@ -54,6 +54,10 @@
     text-align: right;
     text-transform: uppercase;
     width: 75%;
+
+    @include respond(tab-land) {
+      width: 85%;
+    }
   }
 
   &__heading-span {
@@ -144,5 +148,16 @@
     &__price-only { font-size: 2rem }
   
     &__price-value { font-size: 5rem }
+  }
+
+  @include respond(phone) {
+    max-width: 40rem;
+    margin: 0 auto;
+
+    &__cta { padding-top: 6rem }
+
+    &__price-only { font-size: 1.75rem }
+  
+    &__price-value { font-size: 4rem }
   }
 }
