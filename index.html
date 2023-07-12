@@ -55,9 +55,18 @@
 					</div>
 					<div class="col-1-of-2">
 						<div class="composition">
-							<img src="src/img/nat-1-large.jpg" loading="lazy" class="composition__photo composition__photo--p1" alt="Photo 1" />
-							<img src="src/img/nat-2-large.jpg" loading="lazy" class="composition__photo composition__photo--p2" alt="Photo 2" />
-							<img src="src/img/nat-3-large.jpg" loading="lazy" class="composition__photo composition__photo--p3" alt="Photo 3" />
+							<img srcset="src/img/nat-1.jpg 300w, src/img/nat-1-large.jpg 1000w"
+								src="src/img/nat-1-large.jpg"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								loading="lazy" class="composition__photo composition__photo--p1" alt="Photo 1" />
+							<img srcset="src/img/nat-2.jpg 300w, src/img/nat-2-large.jpg 1000w"
+								src="src/img/nat-2-large.jpg"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								loading="lazy" class="composition__photo composition__photo--p2" alt="Photo 2" />
+							<img srcset="src/img/nat-3.jpg 300w, src/img/nat-3-large.jpg 1000w"
+								src="src/img/nat-3-large.jpg"
+								sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+								loading="lazy" class="composition__photo composition__photo--p3" alt="Photo 3" />
 						</div></div></div></section>
 
 			<section class="section__features">
@@ -168,7 +177,10 @@
 				<div class="row">
 					<div class="story">
 						<figure class="story__shape">
-							<img src="src/img/nat-8.jpg" loading="lazy" class="story__img" alt="Person on a tour" />
+							<img srcset="src/img/nat-8.jpg 400w, src/img/nat-8-med.jpg 1000w, src/img/nat-8-large.jpg 2000w"
+								src="src/img/nat-8-large.jpg"
+								sizes="(max-width: 56.25em) 201px, (max-width: 37.5em) 252px, (max-width: 75em) 285px, (min-width: 120.25em) 378px, 314px"
+								loading="lazy" class="story__img" alt="Person on a tour" />
 							<figcaption class="story__caption">MARY SMITH</figcaption>
 						</figure>
 						<div class="story__text">
@@ -179,7 +191,10 @@
 						</div></div>
 					<div class="story">
 						<figure class="story__shape">
-							<img src="src/img/nat-9.jpg" loading="lazy" class="story__img" alt="Person on a tour" />
+							<img srcset="src/img/nat-9.jpg 400w, src/img/nat-9-med.jpg 1000w, src/img/nat-9-large.jpg 2000w"
+								src="src/img/nat-9-large.jpg"
+								sizes="(max-width: 56.25em) 201px, (max-width: 37.5em) 252px, (max-width: 75em) 285px, (min-width: 120.25em) 378px, 314px"
+								loading="lazy" class="story__img" alt="Person on a tour" />
 							<figcaption class="story__caption">JACK WILSON</figcaption>
 						</figure>
 						<div class="story__text">
@@ -226,7 +241,10 @@
 
 		<footer class="footer">
 			<div class="footer__logo-box">
-				<img src="src/img/logo-green-2x.png" loading="lazy" class="footer__logo" alt="Full logo" />
+				<picture>
+					<source srcset="src/img/logo-green-small-1x.png 1x, src/img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)" />
+					<img srcset="src/img/logo-green-1x.png 1x, src/img/logo-green-2x.png 2x" src="src/img/logo-green-1x.png" loading="lazy" class="footer__logo" alt="Full logo" />
+				</picture>	
 			</div>
 			<div class="row">
 				<div class="col-1-of-2">
@@ -246,8 +264,14 @@
 
 		<div class="popup" id="popup"><div class="popup__content">
 			<div class="popup__left">
-				<img src="src/img/nat-8.jpg" class="popup__img" alt="Tour Photo" />
-				<img src="src/img/nat-9.jpg" class="popup__img" alt="Tour Photo" />
+				<img srcset="src/img/nat-8.jpg 400w, src/img/nat-8-med.jpg 1000w, src/img/nat-8-large.jpg 2000w"
+					src="src/img/nat-8-large.jpg"
+					sizes="(max-width: 56.25em) 45vw, (max-width: 37.5em) 280px, (min-width: 120.25em) 460px, 383px"
+					loading="lazy" class="popup__img" alt="Tour Photo" />
+				<img srcset="src/img/nat-9.jpg 400w, src/img/nat-9-med.jpg 1000w, src/img/nat-9-large.jpg 2000w"
+					src="src/img/nat-9-large.jpg"
+					sizes="(max-width: 56.25em) 45vw, (max-width: 37.5em) 280px, (min-width: 120.25em) 460px, 383px"
+					loading="lazy" class="popup__img" alt="Tour Photo" />
 			</div>
 			<div class="popup__right">
 				<a href="#section__tours" class="popup__close">&times;</a>

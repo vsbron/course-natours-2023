@@ -5,6 +5,11 @@
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 120.25em)  {
+    background: linear-gradient(to right bottom, rgba($color-primary-light,.8), rgba($color-primary-dark,.8)), url(../img/hero-large.jpg) no-repeat top center;
+    background-size: cover;
+  }
+
   @include respond(tab-land) {
     height: 70vh;
     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
@@ -21,9 +26,7 @@
     left: 4rem;
   }
   
-  &__logo {
-    height: 3.5rem;
-  }
+  &__logo { height: 3.5rem }
   
   &__text-box {
     @include center-horizontal-vertical;
@@ -31,8 +34,6 @@
     top: 40%;
     text-align: center;
 
-    @include respond(phone) {
-      top: 50%;
-    }
+    @include respond(phone) { top: 50% }
   }
 }
