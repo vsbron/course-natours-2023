@@ -47,7 +47,7 @@
     &--2 { background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg) }
     &--3 { background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg) }
       
-    @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 120.25em) {
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 120.25em) {
       &--1 { background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5-large.jpg) }
       &--2 { background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6-large.jpg) }
       &--3 { background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7-large.jpg) }
@@ -122,7 +122,7 @@
   }
 
   // Responsive version
-  @include respond(tab-port) {
+  @media only sceen and (max-width: 56.25em), only screen and (hover: none) {
     border-radius: $border-radius-small;
     background-color: $color-white;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
