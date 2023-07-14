@@ -4,11 +4,16 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba($color-black, .8);
+  background: rgba($color-black, .4);
   z-index: 5000;
   opacity: 0;
   pointer-events: none;
   transition: all .3s $animation-timing-quint;
+  
+  @supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 
   &__content {
     @include center-horizontal-vertical;

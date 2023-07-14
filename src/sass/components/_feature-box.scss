@@ -12,12 +12,17 @@
   @include respond(tab-port) { padding: 2rem 2rem 4rem }
 
   &__icon {
-    background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    background-clip: text;
-    color: transparent;
+    color: $color-primary;
     font-size: 6rem;
     padding-top: 3px;
     margin-bottom: .5rem;
+
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
 
     @include respond(tab-port) { margin-bottom: 0 }
   }
