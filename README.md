@@ -3,7 +3,7 @@
 Small website about nature tours. Created as a part of Advanced CSS & Sass project in 2023.
 
 ## Features
- - Full screen menu;
+ - Full screen menu (with blank links);
  - Flipping cards with tour packages;
  - Testimonials with video background;
  - Simple contact form;
